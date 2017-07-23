@@ -566,6 +566,21 @@
         
       </div>
     </main>
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+      id: '', // 可选。默认为 location.href
+      owner: 'Jason-lhh',
+      repo: 'https://github.com/Jason-lhh/Jason-lhh.github.io.git',
+      oauth: {
+        client_id: 'fd5b959c137c165f6b63',
+        client_secret: 'f9decb7f876891b4a3f37d25dc94297a29bfe6e2',
+      },
+    })
+    gitment.render('container')
+    </script>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
