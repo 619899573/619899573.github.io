@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-07-24T09:07:33.252Z</updated>
+  <updated>2017-07-24T09:20:34.209Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/child/2017/07/24/hello-world/"/>
     <id>http://yoursite.com/child/2017/07/24/hello-world/</id>
     <published>2017-07-24T02:23:22.000Z</published>
-    <updated>2017-07-24T09:07:33.252Z</updated>
+    <updated>2017-07-24T09:20:34.209Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://jason-lhh.github.io/2017/07/23/hello-world/" target="_blank" rel="external">https://jason-lhh.github.io/2017/07/23/hello-world/</a></p>
 ]]></content>
@@ -36,8 +36,6 @@
     
       <category term="gitment" scheme="http://yoursite.com/child/tags/gitment/"/>
     
-      <category term="https://jason-lhh.github.io/2017/07/23/hello-world/" scheme="http://yoursite.com/child/tags/https-jason-lhh-github-io-2017-07-23-hello-world/"/>
-    
   </entry>
   
   <entry>
@@ -45,7 +43,7 @@
     <link href="http://yoursite.com/child/2017/07/23/first/"/>
     <id>http://yoursite.com/child/2017/07/23/first/</id>
     <published>2017-07-23T06:59:49.000Z</published>
-    <updated>2017-07-23T06:59:49.402Z</updated>
+    <updated>2017-07-24T09:20:43.040Z</updated>
     
     <summary type="html">
     
