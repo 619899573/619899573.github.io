@@ -11,10 +11,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<!-- 加载gitment的css和js文件 -->
-<link rel="stylesheet" href="/css/default.css">
-<script src="/js/gitment.browser.js"></script>
-
 
   
   
@@ -442,7 +438,8 @@
   <div class="comments" id="comments">
 
     <div id="gitment"></div>
-    <!-- 主页不要加载gitment -->
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
       <script>
         var gitment = new Gitment({
           owner: 'Jason-lhh',
