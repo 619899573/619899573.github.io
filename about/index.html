@@ -285,7 +285,6 @@
 
     <div id="gitment"></div>
     <!-- 主页不要加载gitment -->
-    <%if (!index){ %>
       <script>
         var gitment = new Gitment({
           id: '',
@@ -298,7 +297,6 @@
           })
         gitment.render('gitment')
       </script>
-    <% } %>
 
     
   </div>
