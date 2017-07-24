@@ -11,6 +11,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+<!-- 加载gitment的css和js文件 -->
+<link rel="stylesheet" href="/css/default.css">
+<script src="/js/gitment.browser.js"></script>
 
 
   
@@ -93,7 +96,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.1" />
 
 
 
@@ -282,6 +285,24 @@
 
           
   <div class="comments" id="comments">
+
+    <div id="gitment"></div>
+    <!-- 主页不要加载gitment -->
+    <%if (!index){ %>
+      <script>
+        var gitment = new Gitment({
+          id: '',
+          owner: 'Jason-lhh',
+          repo: 'https://github.com/Jason-lhh/Jason-lhh.github.io.git',
+          oauth: {
+            client_id: 'fd5b959c137c165f6b63',
+            client_secret: 'f9decb7f876891b4a3f37d25dc94297a29bfe6e2',
+              },
+          })
+        gitment.render('gitment')
+      </script>
+    <% } %>
+
     
   </div>
 
@@ -409,19 +430,15 @@
   &copy; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jason_LHH</span>
 </div>
 
 
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站访客数:<span id="busuanzi_value_site_uv"></span>
-</span>
-</div>
 
-<!-- <div class="powered-by">
+<!--
+<div class="powered-by">
   由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
@@ -434,7 +451,12 @@
 -->
 
 <div class="theme-info">
-  <div class="powered-by"></div>
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i>
+  <span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
   <span class="post-count">博客全站共10字</span>
 </div>
 
