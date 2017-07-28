@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-07-28T04:28:30.220Z</updated>
+  <updated>2017-07-28T04:30:11.310Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -20,10 +20,9 @@
     <link href="http://yoursite.com/child/2017/07/28/Markdown%E7%BC%96%E8%BE%91%E9%98%85%E8%AF%BB%E5%99%A8/"/>
     <id>http://yoursite.com/child/2017/07/28/Markdown编辑阅读器/</id>
     <published>2017-07-28T04:27:27.000Z</published>
-    <updated>2017-07-28T04:28:30.220Z</updated>
+    <updated>2017-07-28T04:30:11.310Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="我来安利一下-Cmd-Markdown-编辑阅读器"><a href="#我来安利一下-Cmd-Markdown-编辑阅读器" class="headerlink" title="我来安利一下 Cmd Markdown 编辑阅读器"></a>我来安利一下 Cmd Markdown 编辑阅读器</h1><hr>
-<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+    <content type="html"><![CDATA[<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
 <blockquote>
 <ul>
 <li>整理知识，学习笔记</li>
@@ -110,7 +109,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;我来安利一下-Cmd-Markdown-编辑阅读器&quot;&gt;&lt;a href=&quot;#我来安利一下-Cmd-Markdown-编辑阅读器&quot; class=&quot;headerlink&quot; title=&quot;我来安利一下 Cmd Markdown 编辑阅读器&quot;&gt;&lt;/a&gt;我来安利一下 Cmd 
+      &lt;p&gt;我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Cmd Markdown&lt;/strong&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：&lt;/p&gt;
+&lt;bloc
     
     </summary>
     
