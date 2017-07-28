@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-07-28T03:46:21.938Z</updated>
+  <updated>2017-07-28T03:50:26.346Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello world</title>
+    <title>我来安利一下 Cmd Markdown 编辑阅读器</title>
     <link href="http://yoursite.com/child/2017/07/24/hello-world/"/>
     <id>http://yoursite.com/child/2017/07/24/hello-world/</id>
     <published>2017-07-24T02:23:22.000Z</published>
-    <updated>2017-07-28T03:46:21.938Z</updated>
+    <updated>2017-07-28T03:50:26.346Z</updated>
     
     <content type="html"><![CDATA[<h1 id="我来安利一下-Cmd-Markdown-编辑阅读器"><a href="#我来安利一下-Cmd-Markdown-编辑阅读器" class="headerlink" title="我来安利一下 Cmd Markdown 编辑阅读器"></a>我来安利一下 Cmd Markdown 编辑阅读器</h1><hr>
 <p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
@@ -114,10 +114,10 @@
     
     </summary>
     
-      <category term="前端" scheme="http://yoursite.com/child/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="工具" scheme="http://yoursite.com/child/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="gitment" scheme="http://yoursite.com/child/tags/gitment/"/>
+      <category term="Markdown" scheme="http://yoursite.com/child/tags/Markdown/"/>
     
   </entry>
   
