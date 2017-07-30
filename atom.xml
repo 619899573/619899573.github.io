@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-07-28T04:30:11.310Z</updated>
+  <updated>2017-07-30T07:06:52.521Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/child/2017/07/28/Markdown%E7%BC%96%E8%BE%91%E9%98%85%E8%AF%BB%E5%99%A8/"/>
     <id>http://yoursite.com/child/2017/07/28/Markdown编辑阅读器/</id>
     <published>2017-07-28T04:27:27.000Z</published>
-    <updated>2017-07-28T04:30:11.310Z</updated>
+    <updated>2017-07-30T07:06:52.521Z</updated>
     
     <content type="html"><![CDATA[<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
 <blockquote>
@@ -31,6 +31,7 @@
 <li>撰写发布学术论文（LaTeX 公式支持）</li>
 </ul>
 </blockquote>
+<a id="more"></a>
 <p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
 <p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
 <h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="external">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
@@ -110,7 +111,14 @@
     <summary type="html">
     
       &lt;p&gt;我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Cmd Markdown&lt;/strong&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：&lt;/p&gt;
-&lt;bloc
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;整理知识，学习笔记&lt;/li&gt;
+&lt;li&gt;发布日记，杂文，所见所想&lt;/li&gt;
+&lt;li&gt;撰写发布技术文稿（代码支持）&lt;/li&gt;
+&lt;li&gt;撰写发布学术论文（LaTeX 公式支持）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
