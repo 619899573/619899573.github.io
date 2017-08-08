@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-07-30T07:06:52.521Z</updated>
+  <updated>2017-08-08T13:24:03.078Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -14,6 +14,123 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git 学习笔记</title>
+    <link href="http://yoursite.com/child/2017/08/08/Git/"/>
+    <id>http://yoursite.com/child/2017/08/08/Git/</id>
+    <published>2017-08-08T13:22:06.000Z</published>
+    <updated>2017-08-08T13:24:03.078Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
+<li>本文档是学习 <a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git教程</a> 后所做的笔记，教程帮忙很大，非常感谢！</li>
+<li>本笔记主要记录了教程中所用的命令，概念内容不包括在内。</li>
+<li>建议看完教程后再看Git官网的 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Pro Git</a> 一书。</li>
+</ul>
+<h2 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h2><ul>
+<li><p>创建仓库并提交</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git init</code> | 初始化一个Git仓库 |<br> | <code>git add &lt;file&gt;</code> | 添加文件到暂存区（-f 可强制添加） |<br> | <code>git commit -m &quot;提交说明&quot;</code> | 从暂存区提交到版本库|<br> | <code>cat &lt;file&gt;</code> | 查看文件内容 |</p>
+</li>
+</ul>
+<h2 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h2><ul>
+<li><p>查看仓库状态、差异<br> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git status</code> | 查看仓库当前状态 |<br> | <code>git diff &lt;file&gt;</code> |  比较工作区和暂存区的差异 |<br> | <code>git diff --cached &lt;file&gt;</code> |  比较暂存区和版本库的差异 |<br> | <code>git diff HEAD -- &lt;file&gt;</code> |  比较工作区和版本库的差异 |</p>
+</li>
+<li><p>版本回退</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git log</code> | 查看提交历史 |<br> | <code>git log -1</code> | 查看最后一次提交历史 |<br> | <code>git log -num</code> | 查看最后num次提交历史 |<br> | <code>git log --pretty=oneline</code> | 单行格式显示提交历史 |<br> | <code>git reflog</code> | 查看所有操作记录，包括删除的commit记录 |<br> | <code>git reset --hard commit_id</code> | 切换到指定版本 |<br> | <code>git reset --hard HEAD^</code> | 回退上一个版本 |</p>
+<blockquote>
+<p>HEAD 表当前版本， HEAD^ 表上一版本，HEAD^^ 表上两版本，HEAD~99 表上99版本。</p>
+</blockquote>
+</li>
+<li><p>撤销修改<br> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git checkout -- file</code> | 撤销工作区的修改 |<br> | <code>git reset HEAD file</code> | 撤销暂存区的修改 |</p>
+<blockquote>
+<p>已经提交了不合适的修改到版本库时，想要撤销本次提交，可以版本回退，不过前提是没有推送到远程库。</p>
+</blockquote>
+</li>
+<li><p>删除文件<br> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git rm &lt;file&gt;</code> | 删除一个文件 |</p>
+<blockquote>
+<p>如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="推送到远程库"><a href="#推送到远程库" class="headerlink" title="推送到远程库"></a>推送到远程库</h2><ul>
+<li><p>关联远程库</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git remote add origin git@github.com:Jason-lhh/learngit.git</code>| 关联远程库 |<br> | <code>git remote -v</code> | 查看远程库信息 |<br> | <code>git push origin master</code> | 推送并关联指定分支到远程库 |</p>
+<blockquote>
+<p>关联后，使用命令<code>git push -u origin master</code><strong>第一次</strong>推送master分支的所有内容；</p>
+</blockquote>
+</li>
+<li><p>从远程库克隆</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> |   <code>git clone git@github.com:Jason-lhh/gitskills.git</code> | 将远程仓库克隆到当前目录 |<br> | <code>git pull</code> | 拉取远程仓库内容 |</p>
+<blockquote>
+<p>先有远程库，后有本地库。要克隆一个仓库，首先必须知道仓库的地址，然后使用 <code>git clone git@github.com:账户名/仓库名字.git</code> 命令。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><ul>
+<li><p>创建与合并分支</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git branch &lt;brach&gt;</code> | 创建分支 |<br> | <code>git branch</code> | 查看分支 |<br> | <code>git checkout &lt;brach&gt;</code> | 切换分支 |<br> | <code>git checkout -b &lt;brach&gt;</code> | 创建+切换分支 |<br> | <code>git merge &lt;brach&gt;</code> | 合并某分支到当前分支（fast forward模式） |<br> | <code>git merge --no-ff &lt;branch&gt;</code> | 禁用快速合并 |<br> | <code>git merge --no-ff -m &quot;提交说明&quot; &lt;branch&gt;</code> | 普通方式合并，并附提交说明 |<br> | <code>git stash</code> | 保存当前工作环境（包括工作区和暂存区） |<br> | <code>git stash list</code> | 查看保存的工作列表 |<br> | <code>git branch -d &lt;name&gt;</code> | 删除分支 |<br> | <code>git branch -D &lt;name&gt;</code> | 强制删除分支 |<br> | <code>git log --graph --pretty=oneline --abbrev-commit</code> | 查看分支合并图 |</p>
+</li>
+</ul>
+<pre><code>&gt; 当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+</code></pre><ul>
+<li>分支管理策略图</li>
+</ul>
+<p><img src="http://otp5qkej4.bkt.clouddn.com/17-8-8/89451458.jpg" alt="此处输入图片的描述"></p>
+<ul>
+<li>Bug分支</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">st=&gt;start: 修复bug</div><div class="line">th=&gt;operation: git stash 保存当前工作环境</div><div class="line">op=&gt;operation: 切换master分支创建</div><div class="line">切换bug分支修复</div><div class="line">op1=&gt;operation: 合并bug分支</div><div class="line">删除bug分支</div><div class="line">en=&gt;operation: git stash pop 回到工作现场</div><div class="line">e=&gt;end: 完成</div><div class="line"></div><div class="line">st-&gt;th-&gt;op-&gt;op1-&gt;en-&gt;e</div></pre></td></tr></table></figure>
+<blockquote>
+<p>  <code>git stash list</code>   查看当前工作现场<br><code>git status</code>  可以用查看工作区是干净的</p>
+</blockquote>
+<ul>
+<li>多人协作</li>
+</ul>
+<p>多人协作的工作模式通常是这样：</p>
+<ol>
+<li>首先，可以试图用<code>git push origin branch-name</code>推送自己的修改；</li>
+<li>如果推送失败，则因为远程分支比你的本地更新，需要先用<code>git pull</code>试图合并；</li>
+<li>如果合并有冲突，则解决冲突，并在本地提交；</li>
+<li>没有冲突或者解决掉冲突后，再用<code>git push origin branch-name</code>推送就能成功！</li>
+</ol>
+<p>如果<code>git pull</code>提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令<code>git branch --set-upstream branch-name origin/branch-name</code>。</p>
+<p>这就是多人协作的工作模式，一旦熟悉了，就非常简单。</p>
+<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><ul>
+<li><p>标签</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git tag</code> | 查看所有标签 |<br> | <code>git tag &lt;tag_name&gt;</code> | 用于当前分支新建一个标签 |<br> | <code>git tag &lt;tag_name&gt; &lt;commit_id&gt;</code> | 给指定commit打标签 |<br> | <code>git tag -a &lt;tag_name&gt; -m &quot;标签说明&quot; &lt;commit_id&gt;</code> | 给指定commit打标签，并附说明 |<br> | <code>git tag -s &lt;tag_name&gt; -m &quot;标签说明&quot; &lt;commit_id&gt;</code> | 用gpg私钥签名 |<br> | <code>git tag -d &lt;tag_name&gt;</code> | 删除标签 |<br> | <code>git show &lt;tag_name&gt;</code> | 显示标签信息 |<br> | <code>git push origin &lt;tag_name&gt;</code> | 推送标签到远程库 |<br> | <code>git push origin --tags</code> | 推送所有未推送的标签到远程库 |<br> | <code>git push origin :refs/tags/&lt;tag_name&gt;</code> | 删除远程标签（先删除本地，再使用该命令删除） |</p>
+</li>
+</ul>
+<h2 id="自定义Git"><a href="#自定义Git" class="headerlink" title="自定义Git"></a>自定义Git</h2><ul>
+<li><p>修改git样式</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git config --global user.name &quot;you_name&quot;</code> | 设置全局用户名 |<br> | <code>git config --global user.email &quot;email@example.com&quot;</code> | 设置全局邮箱 |<br> | <code>git config --global color.ui true</code> | 设置全局颜色显示 |<br> | <code>git config --global alias.&lt;alias_name&gt; &lt;&#39;command_name&#39;&gt;</code> | 设置别名 |</p>
+</li>
+<li><p>忽略特殊文件</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git check-ignore -v &lt;file&gt;</code> | 查看忽略该文件的规则 |</p>
+</li>
+<li><p>配置别名列表</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git config --global alias.st status</code> | <code>git st</code> |<br> | <code>git config --global alias.co checkout</code> | <code>git checkout &lt;branch_name&gt;</code> |<br> | <code>git config --global alias.ci commit</code> | <code>git ci -m &quot;提交说明&quot;</code> |<br> | <code>git config --global alias.br branch</code> | <code>git br</code> |<br> | <code>git confg alias.unstage &#39;reset HEAD&#39;</code> | <code>git unstage &lt;file&gt;</code> |<br> | <code>git confg alias.last &#39;log -1&#39;</code> | <code>git last</code> 最近一次提交 |</p>
+</li>
+</ul>
+<pre><code>&gt;  `git confg alias.lg &quot;log --color --graph --pretty=format:&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&apos; --abbrev-commit&quot;`
+`git lg` 查看提交历史
+</code></pre><ul>
+<li><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000" target="_blank" rel="external">搭建Git服务器</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;本文档是学习 &lt;a href=&quot;https://www.liaoxuefeng.com/wiki/0013739
+    
+    </summary>
+    
+      <category term="工具" scheme="http://yoursite.com/child/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Git" scheme="http://yoursite.com/child/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>我来安利一下 Cmd Markdown 编辑阅读器</title>
