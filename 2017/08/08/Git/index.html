@@ -101,19 +101,19 @@
 
 
 
-<meta name="description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。 &amp;lt;!--more--&amp;gt;  创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
+<meta name="description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git 学习笔记">
 <meta property="og:url" content="http://yoursite.com/child/2017/08/08/Git/index.html">
 <meta property="og:site_name" content="LHH-Blog">
-<meta property="og:description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。 &amp;lt;!--more--&amp;gt;  创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
+<meta property="og:description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://otp5qkej4.bkt.clouddn.com/17-8-8/89451458.jpg">
-<meta property="og:updated_time" content="2017-08-08T13:27:58.455Z">
+<meta property="og:updated_time" content="2017-08-08T13:51:48.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 学习笔记">
-<meta name="twitter:description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。 &amp;lt;!--more--&amp;gt;  创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
+<meta name="twitter:description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
 <meta name="twitter:image" content="http://otp5qkej4.bkt.clouddn.com/17-8-8/89451458.jpg">
 
 
@@ -465,9 +465,9 @@
 <ul>
 <li>本文档是学习 <a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git教程</a> 后所做的笔记，教程帮忙很大，非常感谢！</li>
 <li>本笔记主要记录了教程中所用的命令，概念内容不包括在内。</li>
-<li>建议看完教程后再看Git官网的 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Pro Git</a> 一书。
-&lt;!--more--&gt;</li>
+<li>建议看完教程后再看Git官网的 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Pro Git</a> 一书。</li>
 </ul>
+<p>&lt;!--more--&gt;</p>
 <h2>创建版本库</h2>
 <ul>
 <li>
@@ -750,7 +750,7 @@
 </ul>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">st=&gt;start: 修复bug</div><div class="line">th=&gt;operation: git stash 保存当前工作环境</div><div class="line">op=&gt;operation: 切换master分支创建</div><div class="line">切换bug分支修复</div><div class="line">op1=&gt;operation: 合并bug分支</div><div class="line">删除bug分支</div><div class="line">en=&gt;operation: git stash pop 回到工作现场</div><div class="line">e=&gt;end: 完成</div><div class="line"></div><div class="line">st-&gt;th-&gt;op-&gt;op1-&gt;en-&gt;e</div></pre></td></tr></table></figure></p>
 <blockquote>
-<p><code>git stash list</code>   查看当前工作现场<br>
+<p><code>git stash list</code>   查看当前工作现场
 <code>git status</code>  可以用查看工作区是干净的</p>
 </blockquote>
 <ul>
@@ -907,9 +907,10 @@
 </table>
 </li>
 </ul>
-<pre><code>&gt;  `git confg alias.lg &quot;log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit&quot;`
-`git lg` 查看提交历史
-</code></pre>
+<blockquote>
+<p><code>git confg alias.lg &quot;log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit&quot;</code>
+<code>git lg</code> 查看提交历史</p>
+</blockquote>
 <ul>
 <li><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000" target="_blank" rel="external">搭建Git服务器</a></li>
 </ul>
