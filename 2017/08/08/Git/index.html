@@ -101,19 +101,19 @@
 
 
 
-<meta name="description" content="本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存区（-f">
+<meta name="description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git 学习笔记">
 <meta property="og:url" content="http://yoursite.com/child/2017/08/08/Git/index.html">
 <meta property="og:site_name" content="LHH-Blog">
-<meta property="og:description" content="本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存区（-f">
+<meta property="og:description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://otp5qkej4.bkt.clouddn.com/17-8-8/89451458.jpg">
-<meta property="og:updated_time" content="2017-08-10T01:46:02.520Z">
+<meta property="og:updated_time" content="2017-08-10T01:50:00.576Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 学习笔记">
-<meta name="twitter:description" content="本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存区（-f">
+<meta name="twitter:description" content="写在前面  本文档是学习 廖雪峰Git教程 后所做的笔记，教程帮忙很大，非常感谢！ 本笔记主要记录了教程中所用的命令，概念内容不包括在内。 建议看完教程后再看Git官网的 Pro Git 一书。  &amp;lt;!--more--&amp;gt; 创建版本库   创建仓库并提交    命令代码 代码含义     git init 初始化一个Git仓库   git add &amp;lt;file&amp;gt; 添加文件到暂存">
 <meta name="twitter:image" content="http://otp5qkej4.bkt.clouddn.com/17-8-8/89451458.jpg">
 
 
@@ -427,7 +427,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  1,494 字
+                  1,498 字
                 </span>
               
 
@@ -461,7 +461,8 @@
       
 
       
-        <ul>
+        <h2>写在前面</h2>
+<ul>
 <li>本文档是学习 <a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git教程</a> 后所做的笔记，教程帮忙很大，非常感谢！</li>
 <li>本笔记主要记录了教程中所用的命令，概念内容不包括在内。</li>
 <li>建议看完教程后再看Git官网的 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Pro Git</a> 一书。</li>
@@ -1180,7 +1181,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">创建版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">时光机穿梭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">推送到远程库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">分支管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">标签管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">自定义Git</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">创建版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">时光机穿梭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">推送到远程库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">分支管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">标签管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">自定义Git</span></a></li></ol></div>
             
 
           </div>
