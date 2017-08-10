@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-08-10T01:54:23.461Z</updated>
+  <updated>2017-08-10T02:01:29.010Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/child/2017/08/08/Git/"/>
     <id>http://yoursite.com/child/2017/08/08/Git/</id>
     <published>2017-08-08T13:22:06.000Z</published>
-    <updated>2017-08-10T01:54:23.461Z</updated>
+    <updated>2017-08-10T02:01:29.010Z</updated>
     
     <content type="html"><![CDATA[<h2>写在前面</h2>
 <ul>
