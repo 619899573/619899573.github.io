@@ -5,11 +5,11 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-08-10T02:01:29.010Z</updated>
+  <updated>2017-08-10T03:42:24.407Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
-    <name>Jason_LHH</name>
+    <name>LHH</name>
     
   </author>
   
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/child/2017/08/08/Git/"/>
     <id>http://yoursite.com/child/2017/08/08/Git/</id>
     <published>2017-08-08T13:22:06.000Z</published>
-    <updated>2017-08-10T02:01:29.010Z</updated>
+    <updated>2017-08-10T03:42:24.407Z</updated>
     
     <content type="html"><![CDATA[<h2>写在前面</h2>
 <ul>
@@ -297,12 +297,13 @@
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。</p>
+</blockquote>
 </li>
-</ul>
-<pre><code>&gt; 当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
-</code></pre>
-<ul>
-<li>分支管理策略图</li>
+<li>
+<p>分支管理策略图</p>
+</li>
 </ul>
 <p><img src="http://otp5qkej4.bkt.clouddn.com/17-8-8/89451458.jpg" alt="此处输入图片的描述"></p>
 <ul>
