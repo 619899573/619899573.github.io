@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-09-15T12:19:59.443Z</updated>
+  <updated>2018-01-30T14:12:46.642Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -20,28 +20,25 @@
     <link href="http://yoursite.com/child/2017/09/15/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E4%BB%8Eurl%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0%EF%BC%8C%E8%BF%99%E4%B9%8B%E4%B8%AD%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/"/>
     <id>http://yoursite.com/child/2017/09/15/前端面试题：从url到页面展现，这之中发生了什么/</id>
     <published>2017-09-15T12:14:06.000Z</published>
-    <updated>2017-09-15T12:19:59.443Z</updated>
+    <updated>2018-01-30T14:12:46.642Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://upload-images.jianshu.io/upload_images/5308475-252af260aa56871a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="在此输入正文"></p>
 <blockquote>
 <p>我们平常在地址栏里输入一些网址时，页面很快就会出现，但在这之中到底发生了什么事情呢？</p>
 </blockquote>
-<h2>大概是这样的流程：</h2>
-<ul>
+<h2 id="大概是这样的流程："><a href="#大概是这样的流程：" class="headerlink" title="大概是这样的流程："></a>大概是这样的流程：</h2><ul>
 <li>在浏览器的地址栏中敲入了url</li>
 <li>域名解析</li>
 <li>服务器处理请求</li>
 <li>浏览器处理</li>
 <li>绘制网页</li>
 </ul>
-<h2>一、在浏览器的地址栏中敲入了url</h2>
-<h3>首先，我们要知道url是什么？</h3>
-<p>URL（Uniform Resource Locator），统一资源定位符，用于定位互联网上的资源，实际上就是网站网址。url的格式一般为：</p>
+<h2 id="一、在浏览器的地址栏中敲入了url"><a href="#一、在浏览器的地址栏中敲入了url" class="headerlink" title="一、在浏览器的地址栏中敲入了url"></a>一、在浏览器的地址栏中敲入了url</h2><h3 id="首先，我们要知道url是什么？"><a href="#首先，我们要知道url是什么？" class="headerlink" title="首先，我们要知道url是什么？"></a>首先，我们要知道url是什么？</h3><p>URL（Uniform Resource Locator），统一资源定位符，用于定位互联网上的资源，实际上就是网站网址。url的格式一般为：</p>
 <blockquote>
 <p>协议类型://&lt;主机名&gt;:&lt;端口&gt;/&lt;路径&gt;/文件名</p>
 </blockquote>
 <p>其中协议类型可以是http（超文本传输协议）、https、ftp（文件传输协议）、telnet（远程登录协议）、file等等。而http是最常见的网络传输协议，https则是进行加密的网络传输。</p>
-<p>例如，我的简书url为http://www.jianshu.com/u/b473784d730c，其中，“http”表示与web服务器通讯采用http协议，简书web服务器域名为www.jianshu.com，u/b473784d730c表示所访问的文件存在于web服务器上的路径。</p>
+<p>例如，我的简书url为<a href="http://www.jianshu.com/u/b473784d730c，其中，“http”表示与web服务器通讯采用http协议，简书web服务器域名为www.jianshu.com，u/b473784d730c表示所访问的文件存在于web服务器上的路径。" target="_blank" rel="noopener">http://www.jianshu.com/u/b473784d730c，其中，“http”表示与web服务器通讯采用http协议，简书web服务器域名为www.jianshu.com，u/b473784d730c表示所访问的文件存在于web服务器上的路径。</a></p>
 <p>url格式中主机名冒号后面的数字是端口编号，因为一台计算机常常会同时作为Web，FTP等服务器，端口编号用来告诉web服务器所在的主机要将请求交给哪个服务。默认情况下http服务的端口为80，不需要在url中输入，如果web服务器采用的不是这一个默认端口，就需要写明服务所用的端口。常见的协议默认端口如下：</p>
 <table>
 <thead>
@@ -69,21 +66,17 @@
 </tr>
 </tbody>
 </table>
-<h3>IP是什么</h3>
-<p>IP是因特网中的每台连接到网络的计算机为实现相互通信而遵循的规则协议。每个处于互联网中的设备都有IP 地址，形如 192.168.0.1，而127.0.0.1代表本机的 IP。IP又分为局域网IP和公网IP。而局域网 IP 和公网 IP 是有差别的。每个网站就是靠IP来定位的。</p>
+<h3 id="IP是什么"><a href="#IP是什么" class="headerlink" title="IP是什么"></a>IP是什么</h3><p>IP是因特网中的每台连接到网络的计算机为实现相互通信而遵循的规则协议。每个处于互联网中的设备都有IP 地址，形如 192.168.0.1，而127.0.0.1代表本机的 IP。IP又分为局域网IP和公网IP。而局域网 IP 和公网 IP 是有差别的。每个网站就是靠IP来定位的。</p>
 <p>为了便于记忆或辨识，人们使用域名来登录网站，每个域名背后有对应的IP地址。</p>
 <p>比如对于 <code>http://www.jianshu.com</code>的URL，浏览器实际上不知道 <code>www.jianshu.com</code>到底是什么东西，需要查找<code>www.jianshu.com</code>网站所在服务器的IP地址，才能找到目标，这就是下文要说的域名解析。</p>
-<h2>二、域名解析</h2>
-<p>当用户在浏览器中输入url后</p>
+<h2 id="二、域名解析"><a href="#二、域名解析" class="headerlink" title="二、域名解析"></a>二、域名解析</h2><p>当用户在浏览器中输入url后</p>
 <ul>
-<li>
-<p>查找浏览器缓存</p>
+<li><p>查找浏览器缓存</p>
 <blockquote>
 <p>浏览器会检查缓存中有没有这个域名对应的解析过的IP地址，如果缓存中有，这个解析过程就将结束。Chrome浏览器看本身的DNS缓存时间比较方便，在地址栏输入<code>chrome://net-internals/#dns</code>，就可以看到了<img src="http://upload-images.jianshu.io/upload_images/5308475-1edd5a71a8c33fd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="此处输入图片的描述"></p>
 </blockquote>
 </li>
-<li>
-<p>查找操作系统缓存</p>
+<li><p>查找操作系统缓存</p>
 </li>
 </ul>
 <blockquote>
@@ -99,16 +92,13 @@
 <li>查找ISP DNS 缓存</li>
 </ul>
 <blockquote>
-<p>如果路由器缓存中也找不到，那么就查询ISP DNS 缓存服务器了。
-我们都知道在我们的网络配置中都会有”DNS服务器地址”这一项，操作系统会把这个域名发送给这里设置的DNS，比如<code>114.114.114.114</code>,也就是本地区的域名服务器，通常是提供给你接入互联网的应用提供商。而<code>114.114.114.114</code>是国内移动、电信和联通通用的DNS。</p>
+<p>如果路由器缓存中也找不到，那么就查询ISP DNS 缓存服务器了。<br>我们都知道在我们的网络配置中都会有”DNS服务器地址”这一项，操作系统会把这个域名发送给这里设置的DNS，比如<code>114.114.114.114</code>,也就是本地区的域名服务器，通常是提供给你接入互联网的应用提供商。而<code>114.114.114.114</code>是国内移动、电信和联通通用的DNS。</p>
 </blockquote>
 <ul>
 <li>递归查找</li>
 </ul>
 <blockquote>
 <p>如果前面都找不到DNS缓存的话，会有以下几个步骤：</p>
-</blockquote>
-<blockquote>
 <ul>
 <li>本地DNS服务器将该请求转发到互联网上的根域（根域没有名字，在DNS系统中就用一个空字符串来表示。例如<code>www.baidu.com</code>.现在的DNS系统都不会要求域名以.来结束，即<code>www.baidu.com</code>就可以解析了，但是现在很多DNS解析服务商还是会要求在填写DNS记录的时候以.来结尾域名。）</li>
 <li>根域将所要查询域名中的顶级域（比如要查询<code>www.baidu,com</code>，该域名的顶级域就是<code>com</code>）的服务器IP地址返回到本地DNS。</li>
@@ -116,51 +106,33 @@
 <li>本地DNS再向二级域发送请求进行查询。</li>
 <li>之后不断重复这样的过程，直到本地DNS服务器得到最终的查询结果，并返回到主机。这时候主机才能通过域名访问该网站。</li>
 </ul>
-</blockquote>
-<blockquote>
-<p>下图能很好的说明这个<strong>递归查找</strong>:
-<img src="http://upload-images.jianshu.io/upload_images/5308475-cf58e66c93c1f2ec.gif?imageMogr2/auto-orient/strip" alt="此处输入图片的描述"></p>
+<p>下图能很好的说明这个<strong>递归查找</strong>:<br><img src="http://upload-images.jianshu.io/upload_images/5308475-cf58e66c93c1f2ec.gif?imageMogr2/auto-orient/strip" alt="此处输入图片的描述"></p>
 </blockquote>
 <p>当查找到对应的IP地址之后，通过IP地址查找到对应的服务器，浏览器将用户发起的http请求发送给服务器。例如：<code>GET http://www.baidu.com/ HTTP/1.1</code></p>
-<h2>三、服务器处理请求</h2>
-<p>每台服务器上都会安装处理请求的应用——<code>Web server</code>。常见的web server产品有<code>apache</code>、<code>nginx</code>、<code>IIS</code>、<code>Lighttpd</code>等。</p>
+<h2 id="三、服务器处理请求"><a href="#三、服务器处理请求" class="headerlink" title="三、服务器处理请求"></a>三、服务器处理请求</h2><p>每台服务器上都会安装处理请求的应用——<code>Web server</code>。常见的web server产品有<code>apache</code>、<code>nginx</code>、<code>IIS</code>、<code>Lighttpd</code>等。</p>
 <p>当web server接收到一个HTTP请求(request)，会返回一个HTTP响应(response)，例如送回一个HTML页面。对于不同用户发送的请求，会结合配置文件，把不同请求委托给服务器上处理对应请求的程序进行处理（例如CGI脚本，JSP脚本，servlets，ASP脚本，服务器端JavaScript，或者一些其它的服务器端技术等）。</p>
 <p>无论它们(脚本)的目的如何，这些服务器端(server-side)的程序通常产生一个HTML的响应(response)来让浏览器可以浏览。</p>
-<p>那么如何处理请求？实际上就是后台处理的工作。后台开发现在有很多框架，但大部分都还是按照<a href="https://zh.wikipedia.org/wiki/MVC" target="_blank" rel="external">MVC设计模式</a>进行搭建的。</p>
-<p>处理的过程如下图：
-<img src="http://upload-images.jianshu.io/upload_images/5308475-d45e8967170041f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="此处输入图片的描述"></p>
-<p><strong>MVC</strong>的处理过程是这样的：对于每一个用户输入的请求，首先被控制器接收，控制器决定用哪个模型来进行处理，然后模型用业务逻辑来处理用户的请求并返回数据，最后控制器确定用哪个视图模型，用相应的视图格式化模型返回html字符串给浏览器，并通过显示页面呈现给用户。</p>
-<h2>四、浏览器处理</h2>
-<p>接下来就是浏览器进行处理， 通过后台处理返回的HTML字符串被浏览器接受后被一句句读取解析，html页面经历加载、解析、渲染。</p>
+<p>那么如何处理请求？实际上就是后台处理的工作。后台开发现在有很多框架，但大部分都还是按照<a href="https://zh.wikipedia.org/wiki/MVC" target="_blank" rel="noopener">MVC设计模式</a>进行搭建的。</p>
+<p> 处理的过程如下图：<br> <img src="http://upload-images.jianshu.io/upload_images/5308475-d45e8967170041f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="此处输入图片的描述"></p>
+<p> <strong>MVC</strong>的处理过程是这样的：对于每一个用户输入的请求，首先被控制器接收，控制器决定用哪个模型来进行处理，然后模型用业务逻辑来处理用户的请求并返回数据，最后控制器确定用哪个视图模型，用相应的视图格式化模型返回html字符串给浏览器，并通过显示页面呈现给用户。</p>
+<h2 id="四、浏览器处理"><a href="#四、浏览器处理" class="headerlink" title="四、浏览器处理"></a>四、浏览器处理</h2><p>接下来就是浏览器进行处理， 通过后台处理返回的HTML字符串被浏览器接受后被一句句读取解析，html页面经历加载、解析、渲染。</p>
 <ul>
-<li>
-<p><strong>加载</strong>
-浏览器对一个html页面的加载顺序是从上而下的。如果加载过程中遇到外部css文件，浏览器另外发出一个请求，来获取css文件。遇到图片资源，浏览器也会另外发出一个请求，来获取图片资源。但是当文档加载过程中遇到js文件，html文档会挂起渲染（加载解析渲染同步）的线程，不仅要等待文档中js文件加载完毕，还要等待解析执行完毕，才可以恢复html文档的渲染线程。</p>
+<li><p><strong>加载</strong><br>浏览器对一个html页面的加载顺序是从上而下的。如果加载过程中遇到外部css文件，浏览器另外发出一个请求，来获取css文件。遇到图片资源，浏览器也会另外发出一个请求，来获取图片资源。但是当文档加载过程中遇到js文件，html文档会挂起渲染（加载解析渲染同步）的线程，不仅要等待文档中js文件加载完毕，还要等待解析执行完毕，才可以恢复html文档的渲染线程。</p>
 </li>
-<li>
-<p><strong>解析</strong></p>
+<li><p><strong>解析</strong></p>
 <p><strong>解析文档</strong>是指将文档转化成为有意义的结构，也就是可让代码理解和使用的结构。解析得到的结果通常是代表了文档结构的节点树，它称作解析树或者语法树，也就是DOM树。如下图：<img src="http://upload-images.jianshu.io/upload_images/5308475-3817847173a249ef.gif?imageMogr2/auto-orient/strip" alt="此处输入图片的描述"></p>
-<p><strong>css解析</strong>是指将css文件解析为样式表对象。如下图：<img src="http://upload-images.jianshu.io/upload_images/5308475-810853491150d1ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="此处输入图片的描述"></p>
-<p><strong>js解析</strong>是文件在加载的同时也进行解析
-如果想深入如何解析的话可以<a href="https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/#Parsing_general" target="_blank" rel="external">看浏览器的工作原理：新式网络浏览器幕后揭秘</a>这篇文章</p>
+<p> <strong>css解析</strong>是指将css文件解析为样式表对象。如下图：<img src="http://upload-images.jianshu.io/upload_images/5308475-810853491150d1ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="此处输入图片的描述"></p>
+<p> <strong>js解析</strong>是文件在加载的同时也进行解析<br>如果想深入如何解析的话可以<a href="https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/#Parsing_general" target="_blank" rel="noopener">看浏览器的工作原理：新式网络浏览器幕后揭秘</a>这篇文章</p>
 </li>
 </ul>
 <ul>
-<li>
-<p><strong>渲染</strong></p>
-<p>即为构建渲染树的过程，就是将DOM树进行可视化表示。构建这棵树是为了以正确的顺序绘制文档内容。</p>
+<li><p><strong>渲染</strong></p>
+<p> 即为构建渲染树的过程，就是将DOM树进行可视化表示。构建这棵树是为了以正确的顺序绘制文档内容。</p>
 </li>
 </ul>
-<h2>五、绘制网页</h2>
-<p>浏览器根据 HTML 和 CSS 计算得到渲染树，最终绘制到屏幕上</p>
+<h2 id="五、绘制网页"><a href="#五、绘制网页" class="headerlink" title="五、绘制网页"></a>五、绘制网页</h2><p>浏览器根据 HTML 和 CSS 计算得到渲染树，最终绘制到屏幕上</p>
 <hr>
-<p><strong>参考的文章：</strong>
-<a href="https://segmentfault.com/a/1190000006879700" target="_blank" rel="external">前端经典面试题: 从输入URL到页面加载发生了什么？</a>
-<a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" target="_blank" rel="external">What really happens when you navigate to a URL</a>
-<a href="http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/www/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8-%E4%BB%8E%20URL%E8%BE%93%E5%85%A5%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0.html#/" target="_blank" rel="external">从URL输入到页面展现</a>
-<a href="http://blog.csdn.net/nawuyao/article/details/50386409" target="_blank" rel="external">MVC模型结构是什么</a>
-<a href="http://weizhifeng.net/talking-about-domain.html" target="_blank" rel="external">域名详解</a>
-<a href="http://www.jianshu.com/p/e141d1543143" target="_blank" rel="external">浏览器~加载，解析，渲染</a></p>
+<p><strong>参考的文章：</strong><br><a href="https://segmentfault.com/a/1190000006879700" target="_blank" rel="noopener">前端经典面试题: 从输入URL到页面加载发生了什么？</a><br><a href="http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/" target="_blank" rel="noopener">What really happens when you navigate to a URL</a><br><a href="http://book.jirengu.com/jrg-team/frontend-knowledge-ppt/www/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8-%E4%BB%8E%20URL%E8%BE%93%E5%85%A5%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%8E%B0.html#/" target="_blank" rel="noopener">从URL输入到页面展现</a><br><a href="http://blog.csdn.net/nawuyao/article/details/50386409" target="_blank" rel="noopener">MVC模型结构是什么</a><br><a href="http://weizhifeng.net/talking-about-domain.html" target="_blank" rel="noopener">域名详解</a><br><a href="http://www.jianshu.com/p/e141d1543143" target="_blank" rel="noopener">浏览器~加载，解析，渲染</a></p>
 ]]></content>
     
     <summary type="html">
@@ -183,297 +155,68 @@
     <published>2017-08-08T13:22:06.000Z</published>
     <updated>2017-08-10T03:42:24.407Z</updated>
     
-    <content type="html"><![CDATA[<h2>写在前面</h2>
-<ul>
-<li>本文档是学习 <a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰Git教程</a> 后所做的笔记，教程帮忙很大，非常感谢！</li>
+    <content type="html"><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
+<li>本文档是学习 <a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">廖雪峰Git教程</a> 后所做的笔记，教程帮忙很大，非常感谢！</li>
 <li>本笔记主要记录了教程中所用的命令，概念内容不包括在内。</li>
-<li>建议看完教程后再看Git官网的 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Pro Git</a> 一书。</li>
+<li>建议看完教程后再看Git官网的 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">Pro Git</a> 一书。</li>
 </ul>
-<h2>创建版本库</h2>
-<ul>
-<li>
-<p>创建仓库并提交</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git init</code></td>
-<td style="text-align:center">初始化一个Git仓库</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git add &lt;file&gt;</code></td>
-<td style="text-align:center">添加文件到暂存区（-f 可强制添加）</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git commit -m &quot;提交说明&quot;</code></td>
-<td style="text-align:center">从暂存区提交到版本库</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>cat &lt;file&gt;</code></td>
-<td style="text-align:center">查看文件内容</td>
-</tr>
-</tbody>
-</table>
+<h2 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h2><ul>
+<li><p>创建仓库并提交</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git init</code> | 初始化一个Git仓库 |<br> | <code>git add &lt;file&gt;</code> | 添加文件到暂存区（-f 可强制添加） |<br> | <code>git commit -m &quot;提交说明&quot;</code> | 从暂存区提交到版本库|<br> | <code>cat &lt;file&gt;</code> | 查看文件内容 |</p>
 </li>
 </ul>
-<h2>时光机穿梭</h2>
-<ul>
-<li>
-<p>查看仓库状态、差异</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git status</code></td>
-<td style="text-align:center">查看仓库当前状态</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git diff &lt;file&gt;</code></td>
-<td style="text-align:center">比较工作区和暂存区的差异</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git diff --cached &lt;file&gt;</code></td>
-<td style="text-align:center">比较暂存区和版本库的差异</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git diff HEAD -- &lt;file&gt;</code></td>
-<td style="text-align:center">比较工作区和版本库的差异</td>
-</tr>
-</tbody>
-</table>
+<h2 id="时光机穿梭"><a href="#时光机穿梭" class="headerlink" title="时光机穿梭"></a>时光机穿梭</h2><ul>
+<li><p>查看仓库状态、差异<br> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git status</code> | 查看仓库当前状态 |<br> | <code>git diff &lt;file&gt;</code> |  比较工作区和暂存区的差异 |<br> | <code>git diff --cached &lt;file&gt;</code> |  比较暂存区和版本库的差异 |<br> | <code>git diff HEAD -- &lt;file&gt;</code> |  比较工作区和版本库的差异 |</p>
 </li>
-<li>
-<p>版本回退</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git log</code></td>
-<td style="text-align:center">查看提交历史</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git log -1</code></td>
-<td style="text-align:center">查看最后一次提交历史</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git log -num</code></td>
-<td style="text-align:center">查看最后num次提交历史</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git log --pretty=oneline</code></td>
-<td style="text-align:center">单行格式显示提交历史</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git reflog</code></td>
-<td style="text-align:center">查看所有操作记录，包括删除的commit记录</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git reset --hard commit_id</code></td>
-<td style="text-align:center">切换到指定版本</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git reset --hard HEAD^</code></td>
-<td style="text-align:center">回退上一个版本</td>
-</tr>
-</tbody>
-</table>
+<li><p>版本回退</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git log</code> | 查看提交历史 |<br> | <code>git log -1</code> | 查看最后一次提交历史 |<br> | <code>git log -num</code> | 查看最后num次提交历史 |<br> | <code>git log --pretty=oneline</code> | 单行格式显示提交历史 |<br> | <code>git reflog</code> | 查看所有操作记录，包括删除的commit记录 |<br> | <code>git reset --hard commit_id</code> | 切换到指定版本 |<br> | <code>git reset --hard HEAD^</code> | 回退上一个版本 |</p>
 <blockquote>
 <p>HEAD 表当前版本， HEAD^ 表上一版本，HEAD^^ 表上两版本，HEAD~99 表上99版本。</p>
 </blockquote>
 </li>
-<li>
-<p>撤销修改</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git checkout -- file</code></td>
-<td style="text-align:center">撤销工作区的修改</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git reset HEAD file</code></td>
-<td style="text-align:center">撤销暂存区的修改</td>
-</tr>
-</tbody>
-</table>
+<li><p>撤销修改<br> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git checkout -- file</code> | 撤销工作区的修改 |<br> | <code>git reset HEAD file</code> | 撤销暂存区的修改 |</p>
 <blockquote>
 <p>已经提交了不合适的修改到版本库时，想要撤销本次提交，可以版本回退，不过前提是没有推送到远程库。</p>
 </blockquote>
 </li>
-<li>
-<p>删除文件</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git rm &lt;file&gt;</code></td>
-<td style="text-align:center">删除一个文件</td>
-</tr>
-</tbody>
-</table>
+<li><p>删除文件<br> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git rm &lt;file&gt;</code> | 删除一个文件 |</p>
 <blockquote>
 <p>如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。</p>
 </blockquote>
 </li>
 </ul>
-<h2>推送到远程库</h2>
-<ul>
-<li>
-<p>关联远程库</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git remote add origin git@github.com:Jason-lhh/learngit.git</code></td>
-<td style="text-align:center">关联远程库</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git remote -v</code></td>
-<td style="text-align:center">查看远程库信息</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git push origin master</code></td>
-<td style="text-align:center">推送并关联指定分支到远程库</td>
-</tr>
-</tbody>
-</table>
+<h2 id="推送到远程库"><a href="#推送到远程库" class="headerlink" title="推送到远程库"></a>推送到远程库</h2><ul>
+<li><p>关联远程库</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git remote add origin git@github.com:Jason-lhh/learngit.git</code>| 关联远程库 |<br> | <code>git remote -v</code> | 查看远程库信息 |<br> | <code>git push origin master</code> | 推送并关联指定分支到远程库 |</p>
 <blockquote>
 <p>关联后，使用命令<code>git push -u origin master</code><strong>第一次</strong>推送master分支的所有内容；</p>
 </blockquote>
 </li>
-<li>
-<p>从远程库克隆</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git clone git@github.com:Jason-lhh/gitskills.git</code></td>
-<td style="text-align:center">将远程仓库克隆到当前目录</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git pull</code></td>
-<td style="text-align:center">拉取远程仓库内容</td>
-</tr>
-</tbody>
-</table>
+<li><p>从远程库克隆</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> |   <code>git clone git@github.com:Jason-lhh/gitskills.git</code> | 将远程仓库克隆到当前目录 |<br> | <code>git pull</code> | 拉取远程仓库内容 |</p>
 <blockquote>
 <p>先有远程库，后有本地库。要克隆一个仓库，首先必须知道仓库的地址，然后使用 <code>git clone git@github.com:账户名/仓库名字.git</code> 命令。</p>
 </blockquote>
 </li>
 </ul>
-<h2>分支管理</h2>
-<ul>
-<li>
-<p>创建与合并分支</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git branch &lt;brach&gt;</code></td>
-<td style="text-align:center">创建分支</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git branch</code></td>
-<td style="text-align:center">查看分支</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git checkout &lt;brach&gt;</code></td>
-<td style="text-align:center">切换分支</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git checkout -b &lt;brach&gt;</code></td>
-<td style="text-align:center">创建+切换分支</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git merge &lt;brach&gt;</code></td>
-<td style="text-align:center">合并某分支到当前分支（fast forward模式）</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git merge --no-ff &lt;branch&gt;</code></td>
-<td style="text-align:center">禁用快速合并</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git merge --no-ff -m &quot;提交说明&quot; &lt;branch&gt;</code></td>
-<td style="text-align:center">普通方式合并，并附提交说明</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git stash</code></td>
-<td style="text-align:center">保存当前工作环境（包括工作区和暂存区）</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git stash list</code></td>
-<td style="text-align:center">查看保存的工作列表</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git branch -d &lt;name&gt;</code></td>
-<td style="text-align:center">删除分支</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git branch -D &lt;name&gt;</code></td>
-<td style="text-align:center">强制删除分支</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git log --graph --pretty=oneline --abbrev-commit</code></td>
-<td style="text-align:center">查看分支合并图</td>
-</tr>
-</tbody>
-</table>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><ul>
+<li><p>创建与合并分支</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git branch &lt;brach&gt;</code> | 创建分支 |<br> | <code>git branch</code> | 查看分支 |<br> | <code>git checkout &lt;brach&gt;</code> | 切换分支 |<br> | <code>git checkout -b &lt;brach&gt;</code> | 创建+切换分支 |<br> | <code>git merge &lt;brach&gt;</code> | 合并某分支到当前分支（fast forward模式） |<br> | <code>git merge --no-ff &lt;branch&gt;</code> | 禁用快速合并 |<br> | <code>git merge --no-ff -m &quot;提交说明&quot; &lt;branch&gt;</code> | 普通方式合并，并附提交说明 |<br> | <code>git stash</code> | 保存当前工作环境（包括工作区和暂存区） |<br> | <code>git stash list</code> | 查看保存的工作列表 |<br> | <code>git branch -d &lt;name&gt;</code> | 删除分支 |<br> | <code>git branch -D &lt;name&gt;</code> | 强制删除分支 |<br> | <code>git log --graph --pretty=oneline --abbrev-commit</code> | 查看分支合并图 |</p>
 <blockquote>
 <p>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。</p>
 </blockquote>
 </li>
-<li>
-<p>分支管理策略图</p>
+<li><p>分支管理策略图</p>
 </li>
 </ul>
 <p><img src="http://otp5qkej4.bkt.clouddn.com/17-8-8/89451458.jpg" alt="此处输入图片的描述"></p>
 <ul>
 <li>Bug分支</li>
 </ul>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">st=&gt;start: 修复bug</div><div class="line">th=&gt;operation: git stash 保存当前工作环境</div><div class="line">op=&gt;operation: 切换master分支创建</div><div class="line">切换bug分支修复</div><div class="line">op1=&gt;operation: 合并bug分支</div><div class="line">删除bug分支</div><div class="line">en=&gt;operation: git stash pop 回到工作现场</div><div class="line">e=&gt;end: 完成</div><div class="line"></div><div class="line">st-&gt;th-&gt;op-&gt;op1-&gt;en-&gt;e</div></pre></td></tr></table></figure></p>
+<div id="flowchart-0" class="flow-chart"></div>
+
 <blockquote>
-<p><code>git stash list</code>   查看当前工作现场
-<code>git status</code>  可以用查看工作区是干净的</p>
+<p>  <code>git stash list</code>   查看当前工作现场<br><code>git status</code>  可以用查看工作区是干净的</p>
 </blockquote>
 <ul>
 <li>多人协作</li>
@@ -487,162 +230,44 @@
 </ol>
 <p>如果<code>git pull</code>提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令<code>git branch --set-upstream branch-name origin/branch-name</code>。</p>
 <p>这就是多人协作的工作模式，一旦熟悉了，就非常简单。</p>
-<h2>标签管理</h2>
-<ul>
-<li>
-<p>标签</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git tag</code></td>
-<td style="text-align:center">查看所有标签</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git tag &lt;tag_name&gt;</code></td>
-<td style="text-align:center">用于当前分支新建一个标签</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git tag &lt;tag_name&gt; &lt;commit_id&gt;</code></td>
-<td style="text-align:center">给指定commit打标签</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git tag -a &lt;tag_name&gt; -m &quot;标签说明&quot; &lt;commit_id&gt;</code></td>
-<td style="text-align:center">给指定commit打标签，并附说明</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git tag -s &lt;tag_name&gt; -m &quot;标签说明&quot; &lt;commit_id&gt;</code></td>
-<td style="text-align:center">用gpg私钥签名</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git tag -d &lt;tag_name&gt;</code></td>
-<td style="text-align:center">删除标签</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git show &lt;tag_name&gt;</code></td>
-<td style="text-align:center">显示标签信息</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git push origin &lt;tag_name&gt;</code></td>
-<td style="text-align:center">推送标签到远程库</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git push origin --tags</code></td>
-<td style="text-align:center">推送所有未推送的标签到远程库</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git push origin :refs/tags/&lt;tag_name&gt;</code></td>
-<td style="text-align:center">删除远程标签（先删除本地，再使用该命令删除）</td>
-</tr>
-</tbody>
-</table>
+<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><ul>
+<li><p>标签</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git tag</code> | 查看所有标签 |<br> | <code>git tag &lt;tag_name&gt;</code> | 用于当前分支新建一个标签 |<br> | <code>git tag &lt;tag_name&gt; &lt;commit_id&gt;</code> | 给指定commit打标签 |<br> | <code>git tag -a &lt;tag_name&gt; -m &quot;标签说明&quot; &lt;commit_id&gt;</code> | 给指定commit打标签，并附说明 |<br> | <code>git tag -s &lt;tag_name&gt; -m &quot;标签说明&quot; &lt;commit_id&gt;</code> | 用gpg私钥签名 |<br> | <code>git tag -d &lt;tag_name&gt;</code> | 删除标签 |<br> | <code>git show &lt;tag_name&gt;</code> | 显示标签信息 |<br> | <code>git push origin &lt;tag_name&gt;</code> | 推送标签到远程库 |<br> | <code>git push origin --tags</code> | 推送所有未推送的标签到远程库 |<br> | <code>git push origin :refs/tags/&lt;tag_name&gt;</code> | 删除远程标签（先删除本地，再使用该命令删除） |</p>
 </li>
 </ul>
-<h2>自定义Git</h2>
-<ul>
-<li>
-<p>修改git样式</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git config --global user.name &quot;you_name&quot;</code></td>
-<td style="text-align:center">设置全局用户名</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git config --global user.email &quot;email@example.com&quot;</code></td>
-<td style="text-align:center">设置全局邮箱</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git config --global color.ui true</code></td>
-<td style="text-align:center">设置全局颜色显示</td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git config --global alias.&lt;alias_name&gt; &lt;'command_name'&gt;</code></td>
-<td style="text-align:center">设置别名</td>
-</tr>
-</tbody>
-</table>
+<h2 id="自定义Git"><a href="#自定义Git" class="headerlink" title="自定义Git"></a>自定义Git</h2><ul>
+<li><p>修改git样式</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git config --global user.name &quot;you_name&quot;</code> | 设置全局用户名 |<br> | <code>git config --global user.email &quot;email@example.com&quot;</code> | 设置全局邮箱 |<br> | <code>git config --global color.ui true</code> | 设置全局颜色显示 |<br> | <code>git config --global alias.&lt;alias_name&gt; &lt;&#39;command_name&#39;&gt;</code> | 设置别名 |</p>
 </li>
-<li>
-<p>忽略特殊文件</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git check-ignore -v &lt;file&gt;</code></td>
-<td style="text-align:center">查看忽略该文件的规则</td>
-</tr>
-</tbody>
-</table>
+<li><p>忽略特殊文件</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git check-ignore -v &lt;file&gt;</code> | 查看忽略该文件的规则 |</p>
 </li>
-<li>
-<p>配置别名列表</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">命令代码</th>
-<th style="text-align:center">代码含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>git config --global alias.st status</code></td>
-<td style="text-align:center"><code>git st</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git config --global alias.co checkout</code></td>
-<td style="text-align:center"><code>git checkout &lt;branch_name&gt;</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git config --global alias.ci commit</code></td>
-<td style="text-align:center"><code>git ci -m &quot;提交说明&quot;</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git config --global alias.br branch</code></td>
-<td style="text-align:center"><code>git br</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git confg alias.unstage 'reset HEAD'</code></td>
-<td style="text-align:center"><code>git unstage &lt;file&gt;</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>git confg alias.last 'log -1'</code></td>
-<td style="text-align:center"><code>git last</code> 最近一次提交</td>
-</tr>
-</tbody>
-</table>
+<li><p>配置别名列表</p>
+<p> | 命令代码 | 代码含义 |<br> | :——–:   | :——:  |<br> | <code>git config --global alias.st status</code> | <code>git st</code> |<br> | <code>git config --global alias.co checkout</code> | <code>git checkout &lt;branch_name&gt;</code> |<br> | <code>git config --global alias.ci commit</code> | <code>git ci -m &quot;提交说明&quot;</code> |<br> | <code>git config --global alias.br branch</code> | <code>git br</code> |<br> | <code>git confg alias.unstage &#39;reset HEAD&#39;</code> | <code>git unstage &lt;file&gt;</code> |<br> | <code>git confg alias.last &#39;log -1&#39;</code> | <code>git last</code> 最近一次提交 |</p>
 </li>
 </ul>
 <blockquote>
-<p><code>git confg alias.lg &quot;log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit&quot;</code>
-<code>git lg</code> 查看提交历史</p>
+<p> <code>git confg alias.lg &quot;log --color --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit&quot;</code><br>    <code>git lg</code> 查看提交历史</p>
 </blockquote>
 <ul>
-<li><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000" target="_blank" rel="external">搭建Git服务器</a></li>
+<li>[搭建Git服务器][4]</li>
 </ul>
+<p>  [4]: <a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000</a><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 修复bug
+th=>operation: git stash 保存当前工作环境
+op=>operation: 切换master分支创建
+切换bug分支修复
+op1=>operation: 合并bug分支
+删除bug分支
+en=>operation: git stash pop 回到工作现场
+e=>end: 完成
+
+st->th->op->op1->en->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2&gt;写在前面&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;本文档是学习 &lt;a href=&quot;https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; 
+      &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;本文档是学习 &lt;a href=&quot;https://www.liaoxuefeng.com/wiki/0013739
     
     </summary>
     
@@ -671,33 +296,25 @@
 </blockquote>
 <p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
 <p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
-<h3><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="external">Windows/Mac/Linux 全平台客户端</a></h3>
-<blockquote>
-<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 &lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+<h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
 </blockquote>
 <hr>
-<h2>什么是 Markdown</h2>
-<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
-<h3>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-todo-%E5%88%97%E8%A1%A8" target="_blank" rel="external">Todo 列表</a></h3>
-<ul>
-<li>[ ] 支持以 PDF 格式导出文稿</li>
-<li>[ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
-<li>[x] 新增 Todo 列表功能</li>
-<li>[x] 修复 LaTex 公式渲染问题</li>
-<li>[x] 新增 LaTex 公式编号功能</li>
+<h2 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h2><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+<h3 id="1-制作一份待办事宜-Todo-列表"><a href="#1-制作一份待办事宜-Todo-列表" class="headerlink" title="1. 制作一份待办事宜 Todo 列表"></a>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-待办事宜-todo-列表" target="_blank" rel="noopener">Todo 列表</a></h3><ul>
+<li style="list-style: none"><input type="checkbox"> 支持以 PDF 格式导出文稿</li>
+<li style="list-style: none"><input type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li style="list-style: none"><input type="checkbox" checked> 新增 Todo 列表功能</li>
+<li style="list-style: none"><input type="checkbox" checked> 修复 LaTex 公式渲染问题</li>
+<li style="list-style: none"><input type="checkbox" checked> 新增 LaTex 公式编号功能</li>
 </ul>
-<h3>2. 书写一个质能守恒公式[^LaTeX]</h3>
-<p>$$E=mc^2$$</p>
-<h3>3. 高亮一段代码[^code]</h3>
-<p><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    <span class="comment"># A comment</span></div><div class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></div></pre></td></tr></table></figure></p>
-<h3>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-%E6%B5%81%E7%A8%8B%E5%9B%BE" target="_blank" rel="external">流程图</a></h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">st=&gt;start: Start</div><div class="line">op=&gt;operation: Your Operation</div><div class="line">cond=&gt;condition: Yes or No?</div><div class="line">e=&gt;end</div><div class="line"></div><div class="line">st-&gt;op-&gt;cond</div><div class="line">cond(yes)-&gt;e</div><div class="line">cond(no)-&gt;op</div></pre></td></tr></table></figure></p>
-<h3>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-%E5%BA%8F%E5%88%97%E5%9B%BE" target="_blank" rel="external">序列图</a></h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Alice-&gt;Bob: Hello Bob, how are you?</div><div class="line">Note right of Bob: Bob thinks</div><div class="line">Bob--&gt;Alice: I am good thanks!</div></pre></td></tr></table></figure></p>
-<h3>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-%E7%94%98%E7%89%B9%E5%9B%BE" target="_blank" rel="external">甘特图</a></h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">title 项目开发流程</div><div class="line">section 项目确定</div><div class="line">    需求分析       :a1, 2016-06-22, 3d</div><div class="line">    可行性报告     :after a1, 5d</div><div class="line">    概念验证       : 5d</div><div class="line">section 项目实施</div><div class="line">    概要设计      :2016-07-05  , 5d</div><div class="line">    详细设计      :2016-07-08, 10d</div><div class="line">    编码          :2016-07-15, 10d</div><div class="line">    测试          :2016-07-22, 5d</div><div class="line">section 发布验收</div><div class="line">    发布: 2d</div><div class="line">    验收: 3d</div></pre></td></tr></table></figure></p>
-<h3>7. 绘制表格</h3>
-<table>
+<h3 id="2-书写一个质能守恒公式-LaTeX"><a href="#2-书写一个质能守恒公式-LaTeX" class="headerlink" title="2. 书写一个质能守恒公式[^LaTeX]"></a>2. 书写一个质能守恒公式[^LaTeX]</h3><p>$$E=mc^2$$</p>
+<h3 id="3-高亮一段代码-code"><a href="#3-高亮一段代码-code" class="headerlink" title="3. 高亮一段代码[^code]"></a>3. 高亮一段代码[^code]</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># A comment</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-流程图" target="_blank" rel="noopener">流程图</a></h3><div id="flowchart-0" class="flow-chart"></div>
+
+<h3 id="5-高效绘制-序列图"><a href="#5-高效绘制-序列图" class="headerlink" title="5. 高效绘制 序列图"></a>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-序列图" target="_blank" rel="noopener">序列图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+<h3 id="6-高效绘制-甘特图"><a href="#6-高效绘制-甘特图" class="headerlink" title="6. 高效绘制 甘特图"></a>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-甘特图" target="_blank" rel="noopener">甘特图</a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">title 项目开发流程</span><br><span class="line">section 项目确定</span><br><span class="line">    需求分析       :a1, 2016-06-22, 3d</span><br><span class="line">    可行性报告     :after a1, 5d</span><br><span class="line">    概念验证       : 5d</span><br><span class="line">section 项目实施</span><br><span class="line">    概要设计      :2016-07-05  , 5d</span><br><span class="line">    详细设计      :2016-07-08, 10d</span><br><span class="line">    编码          :2016-07-15, 10d</span><br><span class="line">    测试          :2016-07-22, 5d</span><br><span class="line">section 发布验收</span><br><span class="line">    发布: 2d</span><br><span class="line">    验收: 3d</span><br></pre></td></tr></table></figure>
+<h3 id="7-绘制表格"><a href="#7-绘制表格" class="headerlink" title="7. 绘制表格"></a>7. 绘制表格</h3><table>
 <thead>
 <tr>
 <th>项目</th>
@@ -708,72 +325,58 @@
 <tbody>
 <tr>
 <td>计算机</td>
-<td style="text-align:right">$1600</td>
+<td style="text-align:right">\$1600</td>
 <td style="text-align:center">5</td>
 </tr>
 <tr>
 <td>手机</td>
-<td style="text-align:right">$12</td>
+<td style="text-align:right">\$12</td>
 <td style="text-align:center">12</td>
 </tr>
 <tr>
 <td>管线</td>
-<td style="text-align:right">$1</td>
+<td style="text-align:right">\$1</td>
 <td style="text-align:center">234</td>
 </tr>
 </tbody>
 </table>
-<h3>8. 更详细语法说明</h3>
-<p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" target="_blank" rel="external">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-%E9%AB%98%E9%98%B6%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C" target="_blank" rel="external">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
+<h3 id="8-更详细语法说明"><a href="#8-更详细语法说明" class="headerlink" title="8. 更详细语法说明"></a>8. 更详细语法说明</h3><p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown" target="_blank" rel="noopener">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-高阶语法手册" target="_blank" rel="noopener">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
 <p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
 <hr>
-<h2>什么是 Cmd Markdown</h2>
-<p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
-<h3>1. 实时同步预览</h3>
-<p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
-<h3>2. 编辑工具栏</h3>
-<p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+<h2 id="什么是-Cmd-Markdown"><a href="#什么是-Cmd-Markdown" class="headerlink" title="什么是 Cmd Markdown"></a>什么是 Cmd Markdown</h2><p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+<h3 id="1-实时同步预览"><a href="#1-实时同步预览" class="headerlink" title="1. 实时同步预览"></a>1. 实时同步预览</h3><p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+<h3 id="2-编辑工具栏"><a href="#2-编辑工具栏" class="headerlink" title="2. 编辑工具栏"></a>2. 编辑工具栏</h3><p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
 <p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p>
-<h3>3. 编辑模式</h3>
-<p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
-<h3>4. 实时的云端文稿</h3>
-<p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
-<h3>5. 离线模式</h3>
-<p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
-<h3>6. 管理工具栏</h3>
-<p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+<h3 id="3-编辑模式"><a href="#3-编辑模式" class="headerlink" title="3. 编辑模式"></a>3. 编辑模式</h3><p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+<h3 id="4-实时的云端文稿"><a href="#4-实时的云端文稿" class="headerlink" title="4. 实时的云端文稿"></a>4. 实时的云端文稿</h3><p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+<h3 id="5-离线模式"><a href="#5-离线模式" class="headerlink" title="5. 离线模式"></a>5. 离线模式</h3><p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
+<h3 id="6-管理工具栏"><a href="#6-管理工具栏" class="headerlink" title="6. 管理工具栏"></a>6. 管理工具栏</h3><p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
 <p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p>
 <p>通过管理工具栏可以：</p>
-<p>&lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; 发布：将当前的文稿生成固定链接，在网络上发布，分享
-&lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; 新建：开始撰写一篇新的文稿
-&lt;i class=&quot;icon-trash&quot;&gt;&lt;/i&gt; 删除：删除当前的文稿
-&lt;i class=&quot;icon-cloud&quot;&gt;&lt;/i&gt; 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地
-&lt;i class=&quot;icon-reorder&quot;&gt;&lt;/i&gt; 列表：所有新增和过往的文稿都可以在这里查看、操作
-&lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt; 模式：切换 普通/Vim/Emacs 编辑模式</p>
-<h3>7. 阅读工具栏</h3>
-<p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p>
+<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br><i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br><i class="icon-trash"></i> 删除：删除当前的文稿<br><i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br><i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br><i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
+<h3 id="7-阅读工具栏"><a href="#7-阅读工具栏" class="headerlink" title="7. 阅读工具栏"></a>7. 阅读工具栏</h3><p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p>
 <p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
 <p>工具栏上的五个图标依次为：</p>
-<p>&lt;i class=&quot;icon-list&quot;&gt;&lt;/i&gt; 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落
-&lt;i class=&quot;icon-chevron-sign-left&quot;&gt;&lt;/i&gt; 视图：互换左边编辑区和右边预览区的位置
-&lt;i class=&quot;icon-adjust&quot;&gt;&lt;/i&gt; 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！
-&lt;i class=&quot;icon-desktop&quot;&gt;&lt;/i&gt; 阅读：心无旁骛的阅读模式提供超一流的阅读体验
-&lt;i class=&quot;icon-fullscreen&quot;&gt;&lt;/i&gt; 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
-<h3>8. 阅读模式</h3>
-<p>在 <strong>阅读工具栏</strong> 点击 &lt;i class=&quot;icon-desktop&quot;&gt;&lt;/i&gt; 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
-<h3>9. 标签、分类和搜索</h3>
-<p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
+<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br><i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br><i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br><i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br><i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
+<h3 id="8-阅读模式"><a href="#8-阅读模式" class="headerlink" title="8. 阅读模式"></a>8. 阅读模式</h3><p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
+<h3 id="9-标签、分类和搜索"><a href="#9-标签、分类和搜索" class="headerlink" title="9. 标签、分类和搜索"></a>9. 标签、分类和搜索</h3><p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
 <p>标签： 未分类</p>
 <p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
 <p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p>
-<h3>10. 文稿发布和分享</h3>
-<p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 &lt;i class=&quot;icon-share&quot;&gt;&lt;/i&gt; (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+<h3 id="10-文稿发布和分享"><a href="#10-文稿发布和分享" class="headerlink" title="10. 文稿发布和分享"></a>10. 文稿发布和分享</h3><p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
 <hr>
-<p>再一次感谢您花费时间阅读这份欢迎稿，点击 &lt;i class=&quot;icon-file&quot;&gt;&lt;/i&gt; (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
-<p>作者 <a href="http://weibo.com/ghosert" target="_blank" rel="external">@ghosert</a><br>
-2016 年 07月 07日</p>
-<p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="external">MathJax</a> 参考更多使用方法。</p>
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+<p>作者 <a href="http://weibo.com/ghosert" target="_blank" rel="noopener">@ghosert</a><br>2016 年 07月 07日    </p>
+<p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 [MathJax][4] 参考更多使用方法。</p>
 <p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
+<p>[4]: <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference</a><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start
+op=>operation: Your Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 ]]></content>
     
     <summary type="html">
