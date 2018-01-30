@@ -1,0 +1,36 @@
+# Header
+menu:                                 # 菜单项的相关配置
+  Home: /                              # 配置博客的主页路径
+  Archives: /archives                  # 配置博客的归档路径
+rss: /atom.xml                         # 配置博客的RSS订阅路径
+
+# Content
+excerpt_link: Read More                # 设置查看全文的按钮显示文本
+fancybox: true                         # 是否开启弹出层效果
+
+# Sidebar
+sidebar: right    # 侧边栏展示的方向
+widgets:          # 侧边栏添加的组件配置
+- category        # 显示分类
+- tag             # 显示标签
+- tagcloud        # 显示标签云
+- archive         # 显示归档
+- recent_posts    # 显示最近发布
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+google_analytics:                    # 谷歌统计的ID配置，如果你没有用到，可以为空
+favicon: /favicon.png                # 网站图标路径
+twitter:                             # twitter配置
+google_plus:                         # google plus 配置
+fb_admins:                           # facebook 配置
+fb_app_id:
