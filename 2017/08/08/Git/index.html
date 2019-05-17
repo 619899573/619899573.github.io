@@ -417,18 +417,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-              
-                <a href="/2017/08/08/Git/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/08/08/Git/" itemprop="commentsCount"></span>
-                </a>
-              
-              </span>
-            
           
 
           
@@ -1028,7 +1016,21 @@ st->th->op->op1->en->e</textarea><textarea id="flowchart-0-options" style="displ
 
           
   <div class="comments" id="comments">
-
+    <div id="container"></div>
+      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+      <script>
+      var gitment = new Gitment({
+        id: 'location.href', // 可选。默认为 location.href
+        owner: 'lu-henghui',
+        repo: 'lu-henghui.github.io',
+        oauth: {
+          client_id: '95a51042662de49c617b',
+          client_secret: '303170131a0273e43196c40b5d0447deb4b35508',
+        },
+      })
+      gitment.render('container')
+    </script>
     
       <div id="SOHUCS"></div>
     
@@ -1366,21 +1368,6 @@ st->th->op->op1->en->e</textarea><textarea id="flowchart-0-options" style="displ
 
 
 
-
-  
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cytiQHnpv';
-      var conf = '8a1746025f4933776d11bb216001ef0e';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-  
 
 
 
